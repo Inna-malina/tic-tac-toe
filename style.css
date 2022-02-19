@@ -160,11 +160,15 @@
 }
 
 .year__item {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
 
 .year__item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
     display: block;
     color: black;
     text-decoration: none;

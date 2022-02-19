@@ -5,11 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tic-tac-toe</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <h1>Крестики нолики</h1>
+    <div class="wrapper">
+        <section class="game__section">
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+            <div class="game__section-box"></div>
+        </section>
+    </div>
+    <div class="resalt__section">
+        <h3 class="resalt__title">Результаты:</h3>
+        <p class="resalt__text">Победили: <span class="resalt__text-win"></span></p>
+        <p class="resalt__count">Количество ходов: <span class="resalt__text-count"></span></p>
+        <div class="button__newgame">start new game</div>
+    </div>
+    <audio class="click" src="./media/click.mp3"></audio>
+    <audio class="tada" src="./media/tada.mp3"></audio>
+    <script src="script.js"></script>
 </body>
 
 </html>

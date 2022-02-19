@@ -2,7 +2,7 @@ let gameSection = document.querySelector('.game__section');
 let win = document.querySelector('.resalt__text-win');
 let clear = document.querySelector('.button__newgame');
 let boxes = document.querySelectorAll('.game__section-box');
-let resaltSection = document.querySelector('.resalt__section');
+let modal = document.querySelector('.modal__window');
 let resaltCount = document.querySelector('.resalt__text-count');
 let audioClick = document.querySelector('.click');
 let audioTada = document.querySelector('.tada');
@@ -46,13 +46,13 @@ function check() {
             playerOne = true;
             result = 'крестики';
             win.textContent = result;
-            resaltSection.style.display = 'block';
+            modal.style.display = 'flex';
             audioTada.play();
         } else if (boxes[arr[i][0]].textContent == 'o' && boxes[arr[i][1]].textContent == 'o' && boxes[arr[i][2]].textContent == 'o') {
             playerTwo = true;
             result = 'нолики';
             win.textContent = result;
-            resaltSection.style.display = 'block';
+            modal.style.display = 'flex';
             audioTada.play();
         }
     }
@@ -64,6 +64,6 @@ clear.addEventListener('click', function () {
 
         box.textContent = "";
         win.textContent = "";
-        resaltSection.style.display = 'none';
+        modal.style.display = 'none';
     });
 });

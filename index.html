@@ -8,29 +8,59 @@
     <title>tic-tac-toe</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Крестики нолики</h1>
+
     <div class="wrapper">
-        <section class="game__section">
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-            <div class="game__section-box"></div>
-        </section>
+        <main class="main__contaner">
+            <h1 class="main__contaner-title">Крестики нолики</h1>
+            <section class="game__section">
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+                <div class="game__section-box"></div>
+            </section>
+        </main>
+
+        <footer class="footer__section">
+            <div class="footer__section-contaner center">
+                <div class="contaner__footer-box footer__box">
+                    <ul class="footer__box-years">
+                        <li class="year__item">©</li>
+                        <li class="year__item">2022</li>
+                        <li class="year__item">
+                            <a href="https://github.com/Inna-malina">githab</a>
+                        </li>
+                    </ul>
+                    <div class="footer__box-stadies">
+                        <div class="footer__box-stadies__item stadies__item">
+                            <a href="https://rs.school/js-stage0/"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </div>
-    <div class="resalt__section">
-        <h3 class="resalt__title">Результаты:</h3>
-        <p class="resalt__text">Победили: <span class="resalt__text-win"></span></p>
-        <p class="resalt__count">Количество ходов: <span class="resalt__text-count"></span></p>
-        <div class="button__newgame">start new game</div>
+    <div class="modal__window">
+        <div class="resalt__section">
+            <h3 class="resalt__title">Результаты:</h3>
+            <p class="resalt__text">Победили: <span class="resalt__text-win"></span></p>
+            <p class="resalt__count">Количество ходов: <span class="resalt__text-count"></span></p>
+            <div class="button__newgame">start new game</div>
+        </div>
     </div>
+
+
     <audio class="click" src="./media/click.mp3"></audio>
     <audio class="tada" src="./media/tada.mp3"></audio>
     <script src="script.js"></script>

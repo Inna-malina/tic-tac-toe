@@ -19,9 +19,7 @@ gameSection.addEventListener('click', function (elem) {
 
         } else {
             elem.target.textContent = 'o';
-
         }
-
         count++;
         check();
     }
@@ -56,15 +54,13 @@ function check() {
             audioTada.play();
         }
     }
-
-
 }
 
 
 clear.addEventListener('click', function () {
 
     location.reload();
-
+    localStorage.clear();
     let game = {
         "победили": result,
         "сделано ходов": count
@@ -72,7 +68,6 @@ clear.addEventListener('click', function () {
     localStorage.setItem('игра', JSON.stringify(game));
 
     boxes.forEach(function (box) {
-
         box.textContent = "";
         win.textContent = "";
         modal.style.display = 'none';

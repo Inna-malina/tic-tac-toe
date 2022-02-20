@@ -56,14 +56,26 @@ function check() {
             audioTada.play();
         }
     }
+
+
 }
 
+
 clear.addEventListener('click', function () {
+
     location.reload();
+
+    let game = {
+        "победили": result,
+        "сделано ходов": count
+    };
+    localStorage.setItem('игра', JSON.stringify(game));
+
     boxes.forEach(function (box) {
 
         box.textContent = "";
         win.textContent = "";
         modal.style.display = 'none';
+
     });
 });

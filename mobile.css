@@ -78,6 +78,7 @@
     .wrapper {
         background-image: url('img/teacher_mini.png');
         background-position: top;
+        background-size: cover;
     }
 
     .main__contaner {
@@ -93,11 +94,11 @@
 
 
     .footer__section {
-        /* background: #ae4600; */
+        background: #ae4600;
     }
 
     .contaner__footer-box {
-        padding: 30px 0px;
+        padding: 20px 0px;
     }
 
 

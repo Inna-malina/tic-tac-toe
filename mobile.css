@@ -42,7 +42,7 @@
 @media(max-width: 655px) {
 
     .main__contaner {
-        padding: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 0px;
     }
 
     .game__section {
@@ -81,7 +81,7 @@
     }
 
     .main__contaner {
-        padding: 130px 0px 20px 0px;
+        padding: 130px 0px 0px 0px;
         flex-direction: column;
         justify-content: flex-start;
     }
@@ -93,11 +93,11 @@
 
 
     .footer__section {
-        background: #ae4600;
+        /* background: #ae4600; */
     }
 
     .contaner__footer-box {
-        padding: 60px 0px;
+        padding: 30px 0px;
     }
 
 

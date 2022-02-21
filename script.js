@@ -6,6 +6,7 @@ let modal = document.querySelector('.modal__window');
 let resaltCount = document.querySelector('.resalt__text-count');
 let audioClick = document.querySelector('.click');
 let audioTada = document.querySelector('.tada');
+let audioStendoff = document.querySelector('.stendoff');
 let count = 0;
 let result = '';
 let playerOne;
@@ -21,9 +22,10 @@ gameSection.addEventListener('click', function (elem) {
             elem.target.textContent = 'o';
         }
         count++;
+        standOff();
         check();
     }
-    standOff();
+
     resaltCount.textContent = count;
 });
 
@@ -52,23 +54,20 @@ function check() {
             modal.style.display = 'flex';
             audioTada.play();
         }
-
-
     }
-
-
 }
 
+
+//ничья
 function standOff() {
 
     if (boxes[0].textContent != '' && boxes[1].textContent != '' && boxes[2].textContent != '' && boxes[3].textContent != '' && boxes[4].textContent != '' && boxes[5].textContent != '' && boxes[6].textContent != '' && boxes[7].textContent != '' && boxes[8].textContent != '') {
         result = 'Ничья!';
         win.textContent = result;
         modal.style.display = 'flex';
+        audioStendoff.play();
     }
-
 }
-
 
 
 clear.addEventListener('click', function () {

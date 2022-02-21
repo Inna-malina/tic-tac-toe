@@ -14,9 +14,10 @@ let playerTwo;
 
 gameSection.addEventListener('click', function (elem) {
     audioClick.play();
-    if (elem.target.className == "game__section-box") {
+    if (elem.target.className == "game__section-box" && elem.target.textContent == '') {
         if (count % 2 === 0) {
             elem.target.textContent = 'x';
+
 
         } else {
             elem.target.textContent = 'o';
@@ -56,7 +57,6 @@ function check() {
         }
     }
 }
-
 
 //ничья
 function standOff() {

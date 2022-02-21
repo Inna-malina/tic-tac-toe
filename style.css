@@ -1,0 +1,196 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/school_mini.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FFB74D;
+}
+
+.main__contaner {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 200px 0px;
+}
+
+.main__contaner-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 46px;
+    margin: 0px 0px 50px 0px;
+    color: #064e37;
+
+}
+
+.game__section {
+    width: 350px;
+    /* background: blanchedalmond; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game__section-box {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 34px;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blanchedalmond;
+    border-radius: 10px;
+}
+
+/* -------modal------- */
+.modal__window {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #04040493;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.resalt__section {
+    background: blanchedalmond;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.resalt__section>*:not(:last-child) {
+    padding: 0px 0px 10px 0px;
+}
+
+.resalt__title {
+    font-size: 36px;
+}
+
+.resalt__text {
+    font-size: 18px;
+}
+
+.resalt__text-win, .resalt__text-count {
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: 600;
+}
+
+.resalt__count {
+    font-size: 18px;
+}
+
+.button__newgame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    cursor: pointer;
+    padding: 10px;
+    background: #4caf50;
+    color: blanchedalmond;
+    border-radius: 5px;
+}
+
+/* ------footer----- */
+.center {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.footer__section {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background: #ae4600a8;
+}
+
+.footer__section-contaner {}
+
+.contaner__footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.footer__box {}
+
+.footer__box-years {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+
+.footer__box-years>:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+.year__item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.year__item a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.year__item a:hover {
+    color: white;
+}
+
+.footer__box-stadies {}
+
+.footer__box-stadies__item a {
+    display: block;
+    background: url('img/rs_school_js.svg');
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+    /* filter: invert(); */
+    transition: all 0.2s ease;
+}
+
+.footer__box-stadies__item a:hover {
+    filter: invert();
+}

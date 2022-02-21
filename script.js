@@ -65,7 +65,7 @@ function standOff() {
         result = 'Ничья!';
         win.textContent = result;
         modal.style.display = 'flex';
-        audioStendoff.play();
+        // audioStendoff.play();
     }
 }
 

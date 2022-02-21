@@ -23,6 +23,7 @@ gameSection.addEventListener('click', function (elem) {
         count++;
         check();
     }
+    standOff();
     resaltCount.textContent = count;
 });
 
@@ -41,20 +42,33 @@ function check() {
     for (let i = 0; i < arr.length; i++) {
 
         if (boxes[arr[i][0]].textContent == 'x' && boxes[arr[i][1]].textContent == 'x' && boxes[arr[i][2]].textContent == 'x') {
-            playerOne = true;
             result = 'крестики';
             win.textContent = result;
             modal.style.display = 'flex';
             audioTada.play();
         } else if (boxes[arr[i][0]].textContent == 'o' && boxes[arr[i][1]].textContent == 'o' && boxes[arr[i][2]].textContent == 'o') {
-            playerTwo = true;
             result = 'нолики';
             win.textContent = result;
             modal.style.display = 'flex';
             audioTada.play();
         }
+
+
     }
+
+
 }
+
+function standOff() {
+
+    if (boxes[0].textContent != '' && boxes[1].textContent != '' && boxes[2].textContent != '' && boxes[3].textContent != '' && boxes[4].textContent != '' && boxes[5].textContent != '' && boxes[6].textContent != '' && boxes[7].textContent != '' && boxes[8].textContent != '') {
+        result = 'Ничья!';
+        win.textContent = result;
+        modal.style.display = 'flex';
+    }
+
+}
+
 
 
 clear.addEventListener('click', function () {
